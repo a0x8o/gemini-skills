@@ -12,12 +12,20 @@ description: Use this skill when building applications with Gemini models, Gemin
 
 ### Current Models (Use These)
 
-- `gemini-3-pro-preview`: 1M tokens, complex reasoning, coding, research
+- `gemini-3.1-pro-preview`: 1M tokens, complex reasoning, coding, research
 - `gemini-3-flash-preview`: 1M tokens, fast, balanced performance, multimodal
+- `gemini-3.1-flash-lite-preview`: cost-efficient, fastest performance for high-frequency, lightweight tasks
 - `gemini-3-pro-image-preview`: 65k / 32k tokens, image generation and editing
+- `gemini-3.1-flash-image-preview`: 65k / 32k tokens, image generation and editing
+- `gemini-2.5-pro`: 1M tokens, complex reasoning, coding, research
+- `gemini-2.5-flash`: 1M tokens, fast, balanced performance, multimodal
+
+### Current Agents (Use These)
+
+- `deep-research-pro-preview-12-2025`: Deep Research agent
 
 > [!WARNING]
-> Models like `gemini-2.5-*`, `gemini-2.0-*`, `gemini-1.5-*` are **legacy and deprecated**. Never use them.
+> Models like `gemini-2.0-*`, `gemini-1.5-*` are **legacy and deprecated**. Never use them.
 
 ### Current SDKs (Use These)
 
@@ -151,8 +159,6 @@ Key pages:
 - [SDK migration guide](https://ai.google.dev/gemini-api/docs/migrate.md.txt)
 
 ---
-
-
 
 ## Gemini Live API
 
