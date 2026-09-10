@@ -98,7 +98,7 @@ Install directly from the Cursor plugin directory or via the editor command:
 codex plugin marketplace add https://github.com/google-gemini/gemini-skills
 
 # Install the plugin
-codex plugin install gemini-skills
+codex plugin add gemini-skills@gemini-skills
 ```
 
 ## More info
