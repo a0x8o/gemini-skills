@@ -392,7 +392,7 @@ This index contains links to all documentation pages in `.md.txt` format. Use we
 
 - [Live API Overview](https://ai.google.dev/gemini-api/docs/live.md.txt) — getting started, raw WebSocket usage
 - [Thinking in Live API](https://ai.google.dev/gemini-api/docs/live-api/thinking.md.txt) — background reasoning, conversational fillers, interaction_status, non-blocking tools
-- [Model Card: Gemini 3.8 Live](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live.md.txt) — default low-latency voice agent model & migration guide
+- [Model Card: Gemini 3.8 Live](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live) — default low-latency voice agent model & migration guide
 - [Model Card: Gemini 3.8 Live Extended Thinking](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking.md.txt) — high-reasoning voice model & upgrading guide
 - [Live Transcription](https://ai.google.dev/gemini-api/docs/live-api/live-transcribe.md.txt) — real-time speech-to-text, interim hypotheses, smart formatting, and Hybrid VAD
 - [Live Translate](https://ai.google.dev/gemini-api/docs/live-api/live-translate.md.txt) — configuration options and capabilities for translation
