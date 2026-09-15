@@ -63,6 +63,8 @@ For full before/after code examples, fetch the [Migration Guide](https://ai.goog
 | `gemini-2.5-flash` | `gemini-3.8-flash` or `gemini-3.5-flash-lite` | Latest Flash with Interactions API support, or latest Flash-Lite for cheaper/simpler tasks. |
 | `gemini-2.5-flash-lite` or `gemini-3.1-flash-lite` | `gemini-3.5-flash-lite` | Latest Flash-lite with Interactions API support |
 | `gemini-2.5-pro` | `gemini-3.1-pro-preview` | Latest Pro with 1M context, complex reasoning |
+| Legacy audio understanding / ASR | `gemini-3.5-transcribe` | Dedicated speech-to-text with auto language detection, diarization, word timestamps, and smart formatting |
+| Legacy Live API (`gemini-3.1-flash-live-preview`, `gemini-2.5-flash-native-audio-*`, `gemini-2.0-flash-live-001`) | `gemini-3.8-live` or `gemini-3.8-live-extended-thinking` | Install `google-gemini/gemini-live-api-dev` skill and see its `references/migration.md` for Live API protocol changes |
 
 > **Note:** Within the Interactions API, model upgrades are generally drop-in — change the model string and verify. The breaking changes are at the **API level** (generateContent → Interactions) and parameter deprecations (`temperature`, `top_p`, `top_k`).
 
