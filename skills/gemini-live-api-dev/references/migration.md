@@ -115,7 +115,7 @@ if __name__ == "__main__":
 ### JavaScript / TypeScript
 
 ```javascript
-import { GoogleGenAI, Modality } from '@google/genai';
+import { GoogleGenAI } from '@google/genai';
 
 const ai = new GoogleGenAI({});
 const model = 'gemini-3.8-live-extended-thinking';
@@ -134,7 +134,7 @@ const searchFlights = {
 const session = await ai.live.connect({
   model,
   config: {
-    responseModalities: [Modality.AUDIO],
+    responseModalities: ['audio'],
     thinkingConfig: { thinkingLevel: 'low' },
     tools: [{ functionDeclarations: [searchFlights] }],
   },
