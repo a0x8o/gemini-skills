@@ -24,6 +24,8 @@ Use `gemini-3.8-live` as the default option for low-latency conversational voice
 ### Migration Checklist (`gemini-3.1-flash-live-preview` → `gemini-3.8-live`)
 
 - [ ] **Model string**: Update your model string from `gemini-3.1-flash-live-preview` to `gemini-3.8-live`.
+- [ ] **Thinking level**: `thinking_level` is not supported for `gemini-3.8-live`.
+  Omit `thinking_level` (or `thinking_config`) from your session setup.
 - [ ] **Asynchronous function calling**: Async execution (`behavior: NON_BLOCKING`) is now the default function calling mode. You can still use synchronous blocking mode for backwards compatibility by setting `behavior: BLOCKING` on your tool declarations. Function scheduling (`SILENT`, `WHEN_IDLE`, `INTERRUPTED`) is supported.
 - [ ] **Client content updates**: `send_client_content` is supported throughout the entire session lifecycle with explicit roles (`user` or `model`). Setting `turn_complete=true` unconditionally interrupts active model generation. If you send content without `turn_complete`, the server waits for subsequent messages before responding.
 - [ ] **Proactive audio**: Proactive audio is permanently enabled. Remove `proactive_audio: false` (setting it returns an error).
@@ -47,7 +49,7 @@ When integrating `gemini-3.8-live-extended-thinking`, update your client state m
   - `IN_PROGRESS`: The server is actively processing user input, running background reasoning, or awaiting responses for asynchronous tool calls. Additional model output or tool calls may follow.
   - `IDLE`: The server has finished all processing, reasoning, and tool calls. The session is idle and waiting for user input.
 - [ ] **Asynchronous function calling**: Only asynchronous non-blocking execution (`behavior: NON_BLOCKING`) is supported. Synchronous blocking mode is not supported and returns a hard error. Function scheduling configurations are not supported.
-- [ ] **Thinking configuration**: Configure background reasoning using `thinking_config` (`thinking_level`: `"minimal"` | `"low"` | `"medium"` | `"high"`) in your setup configuration.
+- [ ] **Thinking configuration**: Configure background reasoning using `thinking_config` (`thinking_level`: `"low"` | `"medium"` | `"high"`) in your setup configuration. Note that MINIMAL is not supported.
 - [ ] **Client content updates**: `send_client_content` is supported throughout the entire session lifecycle with explicit roles (`user` or `model`). Setting `turn_complete=true` immediately interrupts active generation.
 - [ ] **Proactive audio**: Permanently enabled. Setting `proactive_audio: false` returns an error.
 
