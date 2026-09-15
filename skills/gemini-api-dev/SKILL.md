@@ -432,4 +432,4 @@ An `Interaction` response contains `steps`, an array of typed step objects repre
 
 ## Gemini Live API
 
-For real-time, bidirectional audio/video/text streaming with the Gemini Live API, install the **`google-gemini/gemini-live-api-dev`** skill. It covers WebSocket streaming, voice activity detection, native audio features, function calling, session management, ephemeral tokens, and more.
+For real-time, bidirectional audio/video/text streaming with the Gemini Live API (`gemini-3.8-live`, `gemini-3.8-live-extended-thinking`, and `gemini-3.5-transcribe-live`), install the **`google-gemini/gemini-live-api-dev`** skill. It covers WebSocket streaming, voice activity detection, background reasoning (extended thinking), asynchronous function calling, session management, ephemeral tokens, and more.
